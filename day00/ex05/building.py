@@ -30,7 +30,6 @@ def main():
     print(f"{sum(map(ispunct, txt))} punctuation marks")
     print(f"{sum(map(str.isspace, txt))} spaces")
     print(f"{sum(map(str.isdigit, txt))} digits")
-    print(ispunct.__doc__)
 
 
 if __name__ == '__main__':
