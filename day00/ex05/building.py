@@ -17,8 +17,9 @@ def main():
         sys.exit("AssertionError: More than one argument is provided")
 
     if len(sys.argv) < 2:
-        print("What is the text to count?")
-        txt = sys.stdin.readline()
+        while len(txt) == 0 :
+            print("What is the text to count?")
+            txt = sys.stdin.readline()
     else:
         txt = sys.argv[1]
 
