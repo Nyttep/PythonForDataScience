@@ -3,7 +3,8 @@ import sys
 
 def ispunct(c: str) -> bool:
     """ispunct(c: str) -> bool
-Check if a character is a punctuation mark
+
+Check if a character is a punctuation mark\n
 Return false if c is not a single character"""
     if (len(c) != 1):
         return False
