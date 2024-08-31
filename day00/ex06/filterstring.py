@@ -31,7 +31,7 @@ Return True if the arguments are good"""
 
     # check if the first argument is a valid string
     # (no punctuation or invisible char)
-    if all([not ispunct(c) and c.isprintable for c in argv[1]]) is False:
+    if all([not ispunct(c) and str.isprintable(c) for c in argv[1]]) is False:
         return False
 
     return True
