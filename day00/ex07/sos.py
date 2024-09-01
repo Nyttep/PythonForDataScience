@@ -1,7 +1,7 @@
 import sys
 
 
-def check_args(argv: list):
+def check_args(argv: list[str]):
     """check_args(argv: list) -> bool
 
 Check if the arguments are valid\n
@@ -12,7 +12,7 @@ Return True if the arguments are good"""
         return False
 
     # check if the first argument is a valid string
-    if all([str.isalnum(c) or str.isspace(c) for c in argv[1]]) is False:
+    if all([c.isalnum() or c.isspace() for c in argv[1]]) is False:
         return False
 
     return True
