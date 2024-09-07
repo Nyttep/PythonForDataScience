@@ -21,4 +21,6 @@ If the image can't be loaded return None and prints the error'''
     else:
         with img:
             img_arr = np.array(img)
+            print(f"The shape of image is: {img_arr.shape}")
+            print(img_arr)
             return img_arr
