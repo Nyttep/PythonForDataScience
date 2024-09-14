@@ -1,5 +1,6 @@
 from load_csv import load
 import numpy as np
+import matplotlib.pyplot as plt
 
 
 def main():
@@ -17,6 +18,7 @@ def main():
         ylabel=ylabel,
         xlabel=xlabel,
         xticks=xticks)
+    plt.show()
 
 
 if __name__ == '__main__':
