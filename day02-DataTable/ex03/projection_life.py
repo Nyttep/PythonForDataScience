@@ -8,10 +8,12 @@ def main():
     life_expect = load(path).loc[:, ['country', '1900']]
     path = '../csv/income_per_person_gdppercapita_ppp_inflation_adjusted.csv'
     gdp = load(path).loc[:, ['country', '1900']]
+
     life_expect = life_expect.set_index('country')
     gdp = gdp.set_index('country')
     life_expect.columns = ['life_expectancy']
     gdp.columns = ['gdp']
+
     df = pd.concat([life_expect, gdp], axis=1)
     df.dropna(axis=0, inplace=True, how='any')
 
