@@ -13,7 +13,7 @@ print("---")
 Lyanna = Stark("Lyanna", False)
 print(Lyanna.__dict__)
 
-try :
+try:
     hodor = Character("hodor")
 except TypeError as e:
-    print("TypeError:" , e)
+    print("TypeError:", e)
