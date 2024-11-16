@@ -18,7 +18,7 @@ Methods:
 
     @abstractmethod
     def die(self):
-        self.is_alive = False
+        pass
 
 
 class Stark(Character):
@@ -44,4 +44,4 @@ Optional args:
         """Kill the character
 
 Sets the is_alive attribute to False"""
-        super().die()
+        self.is_alive = False
