@@ -19,6 +19,19 @@ Args:
 Optional args:
     is_alive (bool): Define if the character is alive, default is True"""
         super().__init__(first_name, is_alive)
+        self.family_name = "Baratheon"
+        self.eyes = "brown"
+        self.hairs = "dark"
+
+    def __str__(self) -> str:
+        ret: str = "Vector: "
+        ret += f"('{type(self).__name__}', '{self.eyes}', '{self.hairs}')"
+        return ret
+
+    def __repr__(self) -> str:
+        ret: str = "Vector: "
+        ret += f"('{type(self).__name__}', '{self.eyes}', '{self.hairs}')"
+        return ret
 
     def die(self):
         """Kill the character"""
@@ -43,6 +56,19 @@ Args:
 Optional args:
     is_alive (bool): Define if the character is alive, default is True"""
         super().__init__(first_name, is_alive)
+        self.family_name = "Lannister"
+        self.eyes = "blue"
+        self.hairs = "light"
+
+    def __str__(self) -> str:
+        ret: str = "Vector: "
+        ret += f"('{type(self).__name__}', '{self.eyes}', '{self.hairs}')"
+        return ret
+
+    def __repr__(self) -> str:
+        ret: str = "Vector: "
+        ret += f"('{type(self).__name__}', '{self.eyes}', '{self.hairs}')"
+        return ret
 
     def die(self):
         """Kill the character"""
