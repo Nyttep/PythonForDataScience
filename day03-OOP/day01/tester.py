@@ -1,6 +1,5 @@
 from S1E7 import Baratheon, Lannister
 
-
 Robert = Baratheon("Robert")
 print(Robert.__dict__)
 print(Robert.__str__)
@@ -15,7 +14,6 @@ print(Cersei.__dict__)
 print(Cersei.__str__)
 print(Cersei.is_alive)
 print("---")
+Jaine = Lannister.create_lannister("Jaine", True)
 print(
-    f"Name : {Cersei.first_name, type(Cersei).__name__}, Alive : {Cersei.is_alive}")
-# Jaine = Lannister.create_lannister("Jaine", True)
-# print(f"Name : {Jaine.first_name, type(Jaine).__name__}, Alive : {Jaine.is_alive}")
+    f"Name : {Jaine.first_name, type(Jaine).__name__}, Alive : {Jaine.is_alive}")
