@@ -1,5 +1,6 @@
 from S1E9 import Character
 
+
 class Baratheon(Character):
     """Class for the Baratheon family, herits from the Character class
 
@@ -21,7 +22,8 @@ Optional args:
 
     def die(self):
         """Kill the character"""
-        super().die()
+        self.is_alive = False
+
 
 class Lannister(Character):
     """Class for the Lannister family, herits from the Character class
@@ -44,4 +46,4 @@ Optional args:
 
     def die(self):
         """Kill the character"""
-        super().die()
+        self.is_alive = False
