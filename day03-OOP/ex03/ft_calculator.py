@@ -1,5 +1,9 @@
 class calculator:
     """
+    calculator class with basic arithmetic operations
+
+    Attributes:
+        vect: list of numbers
     """
 
     def __init__(self, vect: list) -> None:
