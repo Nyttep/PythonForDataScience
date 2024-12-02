@@ -39,11 +39,18 @@ def ft_quartile(args: list[Number]) -> float:
     return quart
 
 
+def ft_variance(args: list[Number]) -> float:
+    mean = ft_mean(args)
+    deviations: list[Number] = [(x - mean)**2 for x in args]
+    return ft_mean(deviations)
+
+
 def ft_statistics(*args: Any, **kwargs: Any) -> None:
     functions: dict[str, function] = {
         "mean": ft_mean,
         "median": ft_median,
         "quartile": ft_quartile,
+        "var": ft_variance,
     }
 
     myargs = [x for x in args if type(x) != str]
