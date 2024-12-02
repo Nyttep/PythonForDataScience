@@ -60,6 +60,21 @@ def ft_std(args: list[Number]) -> float:
 
 
 def ft_statistics(*args: Any, **kwargs: Any) -> None:
+    """
+    Computes and prints statistical measures for the given arguments.
+
+    Parameters:
+    *args (Number): arguments containing numerical values.
+    **kwargs (string): keyword arguments.
+                   The keys can be anything,
+                   and the values should be the function names as strings.
+    Supported statistical measures:
+    - mean: Computes the mean of the given values.
+    - median: Computes the median of the given values.
+    - quartile: Computes the quartiles of the given values.
+    - var: Computes the variance of the given values.
+    - std: Computes the standard deviation of the given values.
+    """
     functions: dict[str, Callable] = {
         "mean": ft_mean,
         "median": ft_median,
