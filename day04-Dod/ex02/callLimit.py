@@ -6,4 +6,13 @@ def callLimit(limit: int):
 
     def callLimiter(function):
         def limit_function(*args: Any, **kwargs: Any):
-            pass
+            nonlocal count
+            if count < limit:
+                function()
+            else:
+                print(f"Error: <function {function.__name__} at {hex(id(function))}>")
+            count += 1
+        
+        return limit_function
+
+    return callLimiter
